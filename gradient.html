@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body{
+        background-repeat: no-repeat;
+        background-size: 1400px 660px;
+        background-attachment: fixed;
+        margin: auto;
+    }
+
+    div{
+        display: inline-block;
+        height: 200px;
+        width: 200px;
+        margin: 10px;
+        margin-top: 50px;
+    }
+
+    .one{
+        background-image: linear-gradient(rgb(112, 240, 112) 25%,red 50%,yellow 75%);
+    }
+
+    .two{
+        background-image: linear-gradient(rgb(0, 128, 0, .5) 30%, rgb(0, 0, 255, .7));
+    }
+
+    .three{
+        background-image: linear-gradient(to bottom left, red, orangered, orange, gold);
+    }
+
+    .four{
+        background-image: linear-gradient(to top right, red, orangered, orange, gold);
+    }
+
+    .five{
+        background-image: linear-gradient(135deg, rgb(255, 0, 0) 30%, rgb(255, 69, 0, .66) 50%, rgb(255, 165, 0, .33), rgb(255, 215, 0, 0));
+    }
+
+    .six{
+        background-image: radial-gradient(rgb(0, 128, 0), rgb(0, 0, 255));
+    }
+
+    .seven{
+        background-image: radial-gradient(aqua 30%, deepskyblue 50%, blue 10%);
+    }
+
+    .eight{
+        width: 423px;
+        background-image: radial-gradient(aqua, teal, blue);
+    }
+
+    .nine{
+        width: 423px;
+        background-image: radial-gradient(circle at 100%, aqua, teal, blue);
+    }
+
+    .ten{
+        background-image: radial-gradient(circle at 50px 100px, palegreen 25%, orchid 50%, limegreen 75%);
+    }
+
+    .eleven{
+        background-attachment: fixed;
+        height: 100px;
+        width: 300px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-image: linear-gradient(to bottom, skyblue, mediumseagreen, lawngreen );
+        margin: auto;
+        -webkit-background-clip: text;
+    }
+
+    .twelve{
+        height: 100px;
+        width: 200px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-image: linear-gradient(to top, aqua, rgb(46, 139, 87, 0.5), greenyellow, yellowgreen, limegreen, deepskyblue, turquoise, skyblue, palegreen, lawngreen, limegreen);
+        margin: auto;
+        -webkit-background-clip: text;
+    }
+
+    .text{
+        color: transparent;
+        font-family: comic sans ms;
+        margin: 100px auto;
+        font-size: 70px;
+    }
+
+    .same{
+        display: inline-block;
+        height: 600px;
+        width: 423px;
+        margin: 10px;
+        margin-top: 50px;
+    }
+
+    .thirteen{
+        background-image: linear-gradient(to top left, aquamarine 16%, turquoise 32%, skyblue 49%, dodgerblue 66% , blueviolet 83%);
+        animation-name: first;
+        animation-duration: 1s;
+        animation-iteration-count: infinite;
+        animation-direction: normal;
+    }
+
+    .forteen{
+        background-image: linear-gradient(to top left, aquamarine 16%, turquoise 32%, skyblue 49%, dodgerblue 66%, blueviolet 83%);
+        animation: second 1.5s infinite reverse ;
+    }
+
+    .fifteen{
+        background-image: linear-gradient(to top left, aquamarine 16%, turquoise 32%, skyblue 49%, dodgerblue 66%, blueviolet 83%);
+        animation: third 1.5s infinite normal ;
+    }
+
+    @keyframes first {
+        0%{ background-image: linear-gradient(to top left, aquamarine 16%, turquoise 32%, skyblue 49%, dodgerblue 66% , blueviolet 83%) }
+        20%{ background-image: linear-gradient(to top left, blueviolet 16%, aquamarine 32%, turquoise 49%, skyblue 66% , dodgerblue 83%) }
+        40%{ background-image: linear-gradient(to top left, dodgerblue 16%, blueviolet 32%, aquamarine 49%, turquoise 66% , skyblue 83%) }
+        60%{ background-image: linear-gradient(to top left, skyblue 16%, dodgerblue 32%, blueviolet 49%, aquamarine 66% , turquoise 83%) }
+        80%{ background-image: linear-gradient(to top left, turquoise 16%, skyblue 32%, dodgerblue 49%, blueviolet 66% , aquamarine 83%) }
+        100%{ background-image: linear-gradient(to top left, aquamarine 16%, turquoise 32%, skyblue 49%, dodgerblue 66% , blueviolet 83%) }
+    }
+
+    @keyframes second {
+        0%{ background-image: linear-gradient(to top left, aquamarine 16%, turquoise 32%, skyblue 49%, dodgerblue 66%, blueviolet 83%) }
+        7%{ background-image: linear-gradient(to top left, blueviolet 4%, aquamarine 20%, turquoise 36%, skyblue 53%, dodgerblue 70%, blueviolet 87%) }
+        14%{ background-image: linear-gradient(to top left, blueviolet 6%, aquamarine 22%, turquoise 38%, skyblue 55%, dodgerblue 72%, blueviolet 89%) }
+        21%{ background-image: linear-gradient(to top left, blueviolet 8%, aquamarine 24%, turquoise 40%, skyblue 57%, dodgerblue 74%, blueviolet 91%) }
+        28%{ background-image: linear-gradient(to top left, blueviolet 10%, aquamarine 26%, turquoise 42%, skyblue 59%, dodgerblue 76%, blueviolet 93%) }
+        35%{ background-image: linear-gradient(to top left, blueviolet 12%, aquamarine 28%, turquoise 44%, skyblue 61%, dodgerblue 78%, blueviolet 95%) }
+        42%{ background-image: linear-gradient(to top left, blueviolet 14%, aquamarine 30%, turquoise 46%, skyblue 63%, dodgerblue 80%, blueviolet 97%) }
+        49%{ background-image: linear-gradient(to top left, blueviolet 16%, aquamarine 32%, turquoise 48%, skyblue 65%, dodgerblue 82%, blueviolet 100%) }
+        56%{ background-image: linear-gradient(to top left, dodgerblue 4%, blueviolet 20%, aquamarine 36%, turquoise 53%, skyblue 70%, dodgerblue 87%) }
+        63%{ background-image: linear-gradient(to top left, dodgerblue 6%, blueviolet 22%, aquamarine 38%, turquoise 55%, skyblue 72%, dodgerblue 89%) }
+        70%{ background-image: linear-gradient(to top left, dodgerblue 8%, blueviolet 24%, aquamarine 40%, turquoise 57%, skyblue 74%, dodgerblue 91%) }
+        77%{ background-image: linear-gradient(to top left, dodgerblue 10%, blueviolet 26%, aquamarine 42%, turquoise 59%, skyblue 76%, dodgerblue 93%) }
+        84%{ background-image: linear-gradient(to top left, dodgerblue 12%, blueviolet 28%, aquamarine 44%, turquoise 61%, skyblue 78%, dodgerblue 95%) }
+        92%{ background-image: linear-gradient(to top left, dodgerblue 14%, blueviolet 30%, aquamarine 46%, turquoise 63%, skyblue 80%, dodgerblue 97%) }
+        100%{ background-image: linear-gradient(to top left, dodgerblue 16%, blueviolet 32%, aquamarine 48%, turquoise 65%, skyblue 82%, dodgerblue 100%) }
+    }
+
+    @keyframes third {
+        0%{ background-image: radial-gradient(circle at 211px 300px, aquamarine 16%, turquoise 32%, skyblue 49%, dodgerblue 66%, blueviolet 83%) }
+        7%{ background-image: radial-gradient(circle at 211px 300px, blueviolet 4%, aquamarine 20%, turquoise 36%, skyblue 53%, dodgerblue 70%, blueviolet 87%) }
+        14%{ background-image: radial-gradient(circle at 211px 300px, blueviolet 6%, aquamarine 22%, turquoise 38%, skyblue 55%, dodgerblue 72%, blueviolet 89%) }
+        21%{ background-image: radial-gradient(circle at 211px 300px, blueviolet 8%, aquamarine 24%, turquoise 40%, skyblue 57%, dodgerblue 74%, blueviolet 91%) }
+        28%{ background-image: radial-gradient(circle at 211px 300px, blueviolet 10%, aquamarine 26%, turquoise 42%, skyblue 59%, dodgerblue 76%, blueviolet 93%) }
+        35%{ background-image: radial-gradient(circle at 211px 300px, blueviolet 12%, aquamarine 28%, turquoise 44%, skyblue 61%, dodgerblue 78%, blueviolet 95%) }
+        42%{ background-image: radial-gradient(circle at 211px 300px, blueviolet 14%, aquamarine 30%, turquoise 46%, skyblue 63%, dodgerblue 80%, blueviolet 97%) }
+        49%{ background-image: radial-gradient(circle at 211px 300px, blueviolet 16%, aquamarine 32%, turquoise 48%, skyblue 65%, dodgerblue 82%, blueviolet 100%) }
+        56%{ background-image: radial-gradient(circle at 211px 300px, dodgerblue 4%, blueviolet 20%, aquamarine 36%, turquoise 53%, skyblue 70%, dodgerblue 87%) }
+        63%{ background-image: radial-gradient(circle at 211px 300px, dodgerblue 6%, blueviolet 22%, aquamarine 38%, turquoise 55%, skyblue 72%, dodgerblue 89%) }
+        70%{ background-image: radial-gradient(circle at 211px 300px, dodgerblue 8%, blueviolet 24%, aquamarine 40%, turquoise 57%, skyblue 74%, dodgerblue 91%) }
+        77%{ background-image: radial-gradient(circle at 211px 300px, dodgerblue 10%, blueviolet 26%, aquamarine 42%, turquoise 59%, skyblue 76%, dodgerblue 93%) }
+        84%{ background-image: radial-gradient(circle at 211px 300px, dodgerblue 12%, blueviolet 28%, aquamarine 44%, turquoise 61%, skyblue 78%, dodgerblue 95%) }
+        92%{ background-image: radial-gradient(circle at 211px 300px, dodgerblue 14%, blueviolet 30%, aquamarine 46%, turquoise 63%, skyblue 80%, dodgerblue 97%) }
+        100%{ background-image: radial-gradient(circle at 211px 300px, dodgerblue 16%, blueviolet 32%, aquamarine 48%, turquoise 65%, skyblue 82%, dodgerblue 100%) }
+    }
+</style>
+<body background="https://th.bing.com/th/id/R.b5602825bff50fdb9a1c5ef5bd68ac23?rik=6ZHYjDZJ8CXaGw&riu=http%3a%2f%2fwallup.net%2fwp-content%2fuploads%2f2016%2f01%2f24661-nat 211px 300pxure-water-forest-mountain.jpg&ehk=9AL%2bE1g7wjcoLhMLTwL%2f9RoLUOaToxqaI1E0E5HalrM%3d&risl=&pid=ImgRaw&r=0">
+    <div1 class="eleven"><h1 class="text">Gradient</h1></div1>
+    <div2 class="twelve"><h1 class="text">Colors</h1></div2>
+    <div class="one"></div>
+    <div class="two"></div>
+    <div class="three"></div>
+    <div class="four"></div>
+    <div class="five"></div>
+    <div class="six"></div>
+    <div class="seven"></div>
+    <div class="eight"></div>
+    <div class="nine"></div>
+    <div class="ten"></div>
+    <div3 class="same thirteen"></div3>
+    <div3 class="same forteen"></div3>
+    <div3 class="same fifteen"></div3>
+</body>
+</html>
